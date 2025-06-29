@@ -2,18 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mortal Kombat Clone</title>
+    <title>MORTAL KABROS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <audio id="bgm" src="audio/theme.mp3" loop></audio>
     <div id="menu">
         <img src="Sprites/Fondos/PortadaPrincipal.png" alt="Portada" class="cover">
-        <h1>Juego Mortal Kombat</h1>
+        <h1>MORTAL KABROS</h1>
         <ul>
-            <li><button id="start-btn">Iniciar</button></li>
+            <li><button id="play-btn">Jugar</button></li>
+            <li><button id="local-btn">1 vs 1 Local</button></li>
+            <li><button id="ai-btn">1 vs IA</button></li>
             <li><button id="options-btn">Opciones</button></li>
-            <li><button id="exit-btn">Salir</button></li>
+            <li><button id="credits-btn">Créditos</button></li>
         </ul>
+    </div>
+    <div id="character-select" class="hidden">
+        <h2>Selecciona tu Kabro</h2>
+        <div id="characters"></div>
+        <button id="next-stage-btn" disabled>Siguiente</button>
+    </div>
+    <div id="stage-select" class="hidden">
+        <h2>Escoge escenario</h2>
+        <ul id="stages"></ul>
     </div>
     <script src="js/main.js"></script>
 </body>

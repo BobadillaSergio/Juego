@@ -24,3 +24,29 @@ button {
     padding: 10px 20px;
     font-size: 1.2em;
 }
+.hidden {
+    display: none;
+}
+#characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#characters img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+#characters img.selected {
+    border-color: red;
+}
+#stages {
+    list-style: none;
+    padding: 0;
+}
+#stages li {
+    margin: 10px;
+}
